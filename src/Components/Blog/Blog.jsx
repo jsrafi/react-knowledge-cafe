@@ -1,5 +1,6 @@
+import { IoBookmarkOutline } from "react-icons/io5";
 
-const Blog = ({ blog }) => {
+const Blog = ({ blog , handleBookmarks}) => {
     const { cover_img, title, author, author_img, posted_date, reading_time, hashtags } = blog;
     return (
         <div className="w-[90%] mb-16 ">
@@ -16,14 +17,15 @@ const Blog = ({ blog }) => {
 
                 <div className=" flex items-center gap-2">
                     <h4>{reading_time} min read</h4>
-                    <button>y</button>
+                    <button onClick={()=>handleBookmarks(blog)}><IoBookmarkOutline></IoBookmarkOutline></button>
                 </div>
             </div>
             <div className="flex flex-col gap-4 mt-4">
                 <h1 className="text-4xl font-bold">{title}</h1>
                 <div className="flex gap-3">
-                    <p>{hashtags[0]}</p>
-                    <p>{hashtags[1]}</p>
+                    <a className="text-blue-500" href="">{hashtags[0]}</a>
+                    <a className="text-blue-500" href="">{hashtags[1]}</a>
+                    
                 </div>
                 <p>mark as read</p>
             </div>
