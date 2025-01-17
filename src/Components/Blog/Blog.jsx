@@ -13,7 +13,7 @@ const Blog = ({ blog, handleBookmarks, handleTime, handleRemoveBookmarks}) => {
 
 
 
-    const { cover_img, title, author, author_img, posted_date, reading_time, hashtags } = blog;
+    const { id, cover_img, title, author, author_img, posted_date, reading_time, hashtags } = blog;
     return (
         <div className="w-[90%] mb-16 ">
             <img className="w-full h-[70vh]  rounded-lg shadow-2xl" src={cover_img} alt="" />
@@ -39,7 +39,7 @@ const Blog = ({ blog, handleBookmarks, handleTime, handleRemoveBookmarks}) => {
                     <a className="text-blue-500" href="">{hashtags[1]}</a>
 
                 </div>
-                <button onClick={() => handleTime(reading_time)} className="text-blue-600 underline text-start">Mark as read</button>
+                <button onClick={() => handleTime(reading_time , id, setChangeBg)} className="text-blue-600 underline text-start">Mark as read</button>
                 
             </div>
         </div>
