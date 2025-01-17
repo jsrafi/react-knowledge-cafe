@@ -16,6 +16,19 @@ function App() {
     setBookmarks(newBookmarks)
   }
 
+ const handleRemoveBookmarks = blog =>
+ {
+   const newBookmarks = bookmarks.filter(bookmark=> bookmark.id !== blog.id);
+   setBookmarks(newBookmarks)
+ }
+
+  const [readingTime, setReadingTime] = useState(0);
+
+  const handleTime =(time)=>
+  {
+    setReadingTime(readingTime + time )
+  }
+
   return (
     <>
 
@@ -25,8 +38,8 @@ function App() {
       </div>
 
       <div className='flex max-w-[1200px] mx-auto mt-16'>
-        <Blogs handleBookmarks={handleBookmarks}></Blogs>
-        <Bookmarks bookmarks={bookmarks}></Bookmarks>
+        <Blogs handleBookmarks={handleBookmarks} handleTime={handleTime} handleRemoveBookmarks={handleRemoveBookmarks}></Blogs>
+        <Bookmarks bookmarks={bookmarks} readingTime={readingTime}></Bookmarks>
       </div>
 
     </>
