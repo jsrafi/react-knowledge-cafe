@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "title": "Mastering React: A Beginner's Guide",
+      "cover_img": "https://i.ibb.co.com/Y01V257/1737104922571.jpg",
+      "author": "John Doe",
+      "author_img": "https://i.ibb.co.com/v42Bcq0/rafi.jpg",
+      "posted_date": "2025-01-10",
+      "reading_time": 5,
+      "hashtags": ["#WebDevelopment", "#ReactJS"]
+    },
+    {
+      "id": 2,
+      "title": "JavaScript ES6 Features You Should Know",
+      "cover_img": "https://i.ibb.co.com/hFwTtcq/still-life-sant-jordi-day-books-roses.jpg",
+      "author": "Jane Smith",
+      "author_img": "https://i.ibb.co.com/cXrpsYX/amruz.jpg",
+      "posted_date": "2025-01-05",
+      "reading_time": 8,
+      "hashtags": ["#JavaScript", "#Frontend"]
+    },
+    {
+      "id": 3,
+      "title": "CSS Grid Layout: A Deep Dive",
+      "cover_img": "https://i.ibb.co.com/C2BNC5Y/pexels-rdne-7979069.jpg",
+      "author": "Michael Brown",
+      "author_img": "https://i.ibb.co.com/5Kb01R9/usuf.jpg",
+      "posted_date": "2025-01-02",
+      "reading_time": 4,
+      "hashtags": ["#CSS", "#WebDesign"]
+    },
+    {
+      "id": 4,
+      "title": "Exploring the Future of AI in Tech",
+      "cover_img": "https://i.ibb.co.com/SJ68hkj/pexels-matthiasgroeneveld-4200745.jpg",
+      "author": "Sarah Johnson",
+      "author_img": "https://i.ibb.co.com/G9WT81T/saka.jpg",
+      "posted_date": "2025-01-01",
+      "reading_time": 6,
+      "hashtags": ["#TechTrends", "#AI"]
+    },
+    {
+      "id": 5,
+      "title": "Building Scalable APIs with Node.js",
+      "cover_img": "https://i.ibb.co.com/HnXVQWR/pexels-enginakyurt-10965754.jpg",
+      "author": "David Lee",
+      "author_img": "https://i.ibb.co.com/Qvf40Mp/joy.jpg",
+      "posted_date": "2024-12-30",
+      "reading_time": 7,
+      "hashtags": ["#NodeJS", "#Backend"]
+    }
+  ]
+  
